@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Resume (Local)",
+    "version": "1.0.0",
+    "description": "Resumes YouTube videos from where you left off, using only local storage.",
+
+    "permissions": ["storage", "alarms"],
+    "host_permissions": ["*://www.youtube.com/*"],
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "js": ["shared.js", "content.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
