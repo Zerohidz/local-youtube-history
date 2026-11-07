@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "lib": ["ES2022", "DOM"],
+        "types": ["chrome"],
+        "strict": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "rootDir": "src",
+        "outDir": "extension"
+    },
+    "include": ["src"]
+}

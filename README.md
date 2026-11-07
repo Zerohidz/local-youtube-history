@@ -9,7 +9,17 @@ A Chromium extension that resumes YouTube videos from where you left off. Progre
 - Forgets a video once you finish it
 - Deletes entries older than 90 days
 
-## Install from source
+## Install
 
-1. Open `chrome://extensions` and turn on **Developer mode**.
-2. Click **Load unpacked** and select the `extension` folder.
+1. Download this repository (**Code > Download ZIP**) and unzip it.
+2. Open `chrome://extensions` and turn on **Developer mode**.
+3. Click **Load unpacked** and select the `extension` folder.
+
+## Development
+
+The source is TypeScript, in `src/`. The JavaScript in `extension/` is generated, so don't edit it by hand; commit it after building so the install steps above keep working.
+
+```sh
+npm install
+npm run build
+```
